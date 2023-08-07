@@ -1,0 +1,20 @@
+.complete {
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.5);
+    flex: 11 1 0;
+}
+.non-complete{
+    flex: 11 1 0 ;
+}
+.Todo_container{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: aquamarine;
+}
+button {
+    flex: 1 1 0;
+}
