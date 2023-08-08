@@ -6,6 +6,9 @@
 .non-complete{
     flex: 11 1 0 ;
 }
+.todo_input{
+    flex: 11 1 0;
+}
 .Todo_container{
     border: 1px solid black;
     border-radius: 10px;

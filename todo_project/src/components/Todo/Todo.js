@@ -23,6 +23,7 @@ const Todo = ({ todo, idx }) => {
     <div className="Todo_container">
       {updateMode ? (
         <input
+          className="todo_input"
           placeholder="Todo"
           value={content}
           onChange={(e) => setContent(e.target.value)}
@@ -30,7 +31,7 @@ const Todo = ({ todo, idx }) => {
       ) : (
         <div className={isComplete ? 'complete' : 'non-complete'}>{todo}</div>
       )}
-      <button onClick={complete}>완료</button>
+      <button onClick={complete}>{isComplete ? '취소' : '완료'}</button>
       <button onClick={() => dispatch(deletetodo(todo))}>삭제</button>
       <button onClick={modify}>수정</button>
     </div>
